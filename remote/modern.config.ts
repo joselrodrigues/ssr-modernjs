@@ -1,8 +1,6 @@
 import { appTools, defineConfig } from "@modern-js/app-tools";
 import { moduleFederationPlugin } from "@module-federation/modern-js";
 
-const isLocal = process.env.IS_LOCAL === "true";
-
 // https://modernjs.dev/en/configure/app/usage
 export default defineConfig({
   runtime: {
@@ -12,10 +10,11 @@ export default defineConfig({
     ssr: {
       mode: "stream",
     },
-    port: 3052,
+    port: 3001,
+    baseUrl: "/remote",
   },
   output: {
-    assetPrefix: isLocal ? "http://localhost:3052" : "/",
+    assetPrefix: "/remote",
   },
   plugins: [
     appTools({
