@@ -94,10 +94,10 @@ yarn dev
 
 Access at: `http://localhost:3000`
 
-#### Combined Command (Development + Serve)
+#### Production Mode
 
 ```bash
-yarn dev && yarn serve
+yarn build && yarn serve
 ```
 
 ## Expected Behavior
