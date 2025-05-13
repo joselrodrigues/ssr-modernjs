@@ -1,6 +1,5 @@
 import { defineServerConfig, type MiddlewareHandler } from '@modern-js/server-runtime';
 import { staticServePlugin } from './index';
-// import { getMonitors } from '@modern-js/runtime';
 
 export const handler: MiddlewareHandler = async (c, next) => {;
   const start = Date.now();
