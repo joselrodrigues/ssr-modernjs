@@ -5,6 +5,7 @@ export default createModuleFederationConfig({
   manifest: {
     filePath: "static",
   },
+  getPublicPath: '',
   filename: "static/remoteEntry.js",
   remotes: {
     remote: "remote@http://localhost:3052/static/mf-manifest.json",

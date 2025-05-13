@@ -1,15 +1,17 @@
-import React, { Suspense } from "react";
+import React, { Suspense } from 'react';
 
 import {
   createRemoteSSRComponent,
   loadRemote,
-} from "@module-federation/modern-js/runtime";
+} from '@module-federation/modern-js/runtime';
 
+console.log('!!!!!!');
 const RemoteButton = createRemoteSSRComponent({
-  loader: () => loadRemote("remote/Button"),
+  loader: () => loadRemote('remote/Button'),
   loading: <div>loading...</div>,
   fallback: ({ error }) => {
-    if (error instanceof Error && error.message.includes("not exist")) {
+    console.log('error', error);
+    if (error instanceof Error && error.message.includes('not exist')) {
       return <div>fallback - not existed id</div>;
     }
     return <div>fallback</div>;
