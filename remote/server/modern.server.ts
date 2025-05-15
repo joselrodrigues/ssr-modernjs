@@ -1,5 +1,5 @@
 import { defineServerConfig, type MiddlewareHandler } from '@modern-js/server-runtime';
-import { staticServePlugin } from './index';
+import { staticServePlugin } from './static-plugin';
 
 export const handler: MiddlewareHandler = async (c, next) => {;
   const start = Date.now();

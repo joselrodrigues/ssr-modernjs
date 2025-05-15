@@ -25,18 +25,18 @@
     "pre-commit": "npx lint-staged"
   },
   "dependencies": {
-    "@modern-js/utils": "0.0.0-next-20250513092257",
-    "@modern-js/runtime": "0.0.0-next-20250513092257",
-    "@modern-js/server-runtime": "0.0.0-next-20250513092257",
-    "@module-federation/modern-js": "0.10.0",
+    "@modern-js/utils": "0.0.0-next-20250515074625",
+    "@modern-js/runtime": "0.0.0-next-20250515074625",
+    "@modern-js/server-runtime": "0.0.0-next-20250515074625",
+    "@module-federation/modern-js": "0.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@modern-js/app-tools": "0.0.0-next-20250513092257",
-    "@modern-js/tsconfig": "0.0.0-next-20250513092257",
-    "@modern-js/server-core": "0.0.0-next-20250513092257",
+    "@modern-js/app-tools": "0.0.0-next-20250515074625",
+    "@modern-js/tsconfig": "0.0.0-next-20250515074625",
+    "@modern-js/server-core": "0.0.0-next-20250515074625",
     "@types/jest": "~29.2.4",
     "@types/node": "~18.11.9",
     "@types/react": "^18.3.11",

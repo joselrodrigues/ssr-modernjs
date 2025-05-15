@@ -1,8 +1,12 @@
 import type { MiddlewareHandler, ServerPlugin } from '@modern-js/server-core';
 import { fs } from '@modern-js/utils';
 import path from 'node:path';
+import { fileCache } from './file-cache';
 
-const createStaticMiddleware = (options: { assetPrefix: string, pwd: string }): MiddlewareHandler => {
+const createStaticMiddleware = (options: {
+  assetPrefix: string;
+  pwd: string;
+}): MiddlewareHandler => {
   const { assetPrefix, pwd } = options;
 
   return async (c, next) => {
@@ -19,24 +23,21 @@ const createStaticMiddleware = (options: { assetPrefix: string, pwd: string }): 
       return next();
     }
 
-    const filepath = path.join(
-      pwd,
-      pathname.replace(assetPrefix, ''),
-    );
-
+    const filepath = path.join(pwd, pathname.replace(assetPrefix, ''));
     if (!(await fs.pathExists(filepath))) {
       return next();
     }
 
+    const fileResult = await fileCache.getFile(filepath);
+    if (!fileResult) {
+      return next();
+    }
+
     c.header('Content-Type', 'application/javascript');
-    const stat = await fs.lstat(filepath);
-    const { size } = stat;
-    // TODO: cache file
-    const chunk = await fs.readFile(filepath, 'utf-8');
-    c.header('Content-Length', String(size));
-    return c.body(chunk, 200);
-  }
-}
+    c.header('Content-Length', String(fileResult.size));
+    return c.body(fileResult.content, 200);
+  };
+};
 
 const staticServePlugin = (): ServerPlugin => ({
   name: '@modern-js/plugin-module-federation/server',
@@ -47,8 +48,8 @@ const staticServePlugin = (): ServerPlugin => ({
       }
 
       const { middlewares } = api.getServerContext();
-      const config = (api as any).getConfig();
-      
+      const config = api.getServerConfig();
+
       const assetPrefix = config.output?.assetPrefix || '';
       if (!config.server?.ssr) {
         return;
@@ -57,12 +58,15 @@ const staticServePlugin = (): ServerPlugin => ({
       const context = api.getServerContext();
       const pwd = context.distDirectory!;
 
-      const serverStaticMiddleware = createStaticMiddleware({ assetPrefix, pwd });
+      const serverStaticMiddleware = createStaticMiddleware({
+        assetPrefix,
+        pwd,
+      });
       middlewares.push({
         name: 'module-federation-serve-manifest',
         handler: serverStaticMiddleware,
       });
-    })
+    });
   },
 });
 
