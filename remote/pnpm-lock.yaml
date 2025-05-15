@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@modern-js/runtime':
-        specifier: 0.0.0-next-20250515074625
-        version: 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 0.0.0-next-20250515112623
+        version: 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@modern-js/server-runtime':
-        specifier: 0.0.0-next-20250515074625
-        version: 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 0.0.0-next-20250515112623
+        version: 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@modern-js/utils':
-        specifier: 0.0.0-next-20250515074625
-        version: 0.0.0-next-20250515074625
+        specifier: 0.0.0-next-20250515112623
+        version: 0.0.0-next-20250515112623
       '@module-federation/modern-js':
         specifier: 0.13.1
         version: 0.13.1(@rsbuild/core@1.3.20)(@rspack/core@1.3.10(@swc/helpers@0.5.17))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)(webpack@5.99.8(@swc/core@1.10.18(@swc/helpers@0.5.17))(esbuild@0.17.19))
@@ -31,14 +31,14 @@ importers:
         specifier: 1.9.4
         version: 1.9.4
       '@modern-js/app-tools':
-        specifier: 0.0.0-next-20250515074625
-        version: 0.0.0-next-20250515074625(@rspack/core@1.3.10(@swc/helpers@0.5.17))(@swc/core@1.10.18(@swc/helpers@0.5.17))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.26.10)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(ts-node@10.9.2(@swc/core@1.10.18(@swc/helpers@0.5.17))(@types/node@18.11.19)(typescript@5.7.3))(tsconfig-paths@4.2.0)(typescript@5.7.3)
+        specifier: 0.0.0-next-20250515112623
+        version: 0.0.0-next-20250515112623(@rspack/core@1.3.10(@swc/helpers@0.5.17))(@swc/core@1.10.18(@swc/helpers@0.5.17))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.26.10)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(ts-node@10.9.2(@swc/core@1.10.18(@swc/helpers@0.5.17))(@types/node@18.11.19)(typescript@5.7.3))(tsconfig-paths@4.2.0)(typescript@5.7.3)
       '@modern-js/server-core':
-        specifier: 0.0.0-next-20250515074625
-        version: 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 0.0.0-next-20250515112623
+        version: 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@modern-js/tsconfig':
-        specifier: 0.0.0-next-20250515074625
-        version: 0.0.0-next-20250515074625
+        specifier: 0.0.0-next-20250515112623
+        version: 0.0.0-next-20250515112623
       '@types/jest':
         specifier: ~29.2.4
         version: 29.2.6
@@ -978,8 +978,8 @@ packages:
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
     hasBin: true
 
-  '@modern-js/app-tools@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-9So2PI/DkYBBOd2PBIBUPOX+ebEWBS+NXTxNGM+wEh58ArOOKuVaE+zU7L5Lpk5qkwnyunHathBs7djZ1Nrcnw==}
+  '@modern-js/app-tools@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-vWPyJdt4NtPwqQwKk6+wydSgLVnBm0dGegjdmX1rL+/Bvj7MlQPY2FRU0LsEo0an+fhJJtao7rsEzKFR5qEOxQ==}
     engines: {node: '>=14.17.6'}
     hasBin: true
     peerDependencies:
@@ -991,57 +991,57 @@ packages:
       tsconfig-paths:
         optional: true
 
-  '@modern-js/babel-compiler@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-r79r9yALKKIKD4HOUe1SdYauvnAYfNcKQPMonp5c25ANL1uyF202n/jnkV0jqcejcfC2rOPTuFYL03AXezLC0w==}
+  '@modern-js/babel-compiler@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-959U5xwhJkx6oy5T7lWlYBVeFBC0Usy/ZHqS/+OylBRB8amlZz27uKTT9nPEtdlpjq1n9lsA4DAfnHnP2rjpJg==}
 
-  '@modern-js/babel-plugin-module-resolver@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-WP1Nk/kb0E0QBl/ibBDRv98PpZ0Q1mOsrlHah4jr6E4mEpk+e12MAo3hcFgKR90nJj5W6Pryy9hw4xfLe/hymQ==}
+  '@modern-js/babel-plugin-module-resolver@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-PYS0bJC75tx5wRXXcOYSVJb/pPZ8mZBl4Xu3DQSx3trJAGE/p2O6zBWHvWekosra0V6JBGYt80VMufU3CgIiWA==}
 
-  '@modern-js/babel-preset@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-RL1+j2GsjQSDQoWCpPrNwYKAU+23q03HPq82HBhILbt9DhKFxYUbB9Az8cGqdgcAIewiACybkY0L2ScZ+YczdQ==}
+  '@modern-js/babel-preset@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-1tcX4UGzSGBXgMxEym5fgXFVb613KxA5Ux8mX8VFoHP083CUxZb3Dsdgmt1ERjtdBW7axjb0Go6/c99jMMII9w==}
 
-  '@modern-js/core@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-aqyCtSCJJlm9OHQGOgnx8rUEYReYzRoujjBpA+DmaLdLecblHqP/MWMbykEecOFC/4K2VRfucKPUx2GWQbhljw==}
+  '@modern-js/core@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-aU++SIbzonuDeykp6F3dekqAOuBOULps2EK7/G2GC3yAaZ8KJe0dt77UeDgLkTt0kzCn2sXICxVYzTQPTvFkAw==}
 
-  '@modern-js/flight-server-transform-plugin@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-0JGmfbT7VeYTv+fI4escr1AEeSfjwPqqNDXn4X+8+QAHt7VgowS7vQfjUiWcCfjpa8mArSvIrI4fA2/4BS7/Vw==}
+  '@modern-js/flight-server-transform-plugin@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-sHNuY4lt9045/moQBuAU5Cm8bCgR0x2gVLLZv9PiOa+vCIMGhoyfEv3vmU497XTw9mBpxudeob/wCnsg/VqbhQ==}
 
-  '@modern-js/node-bundle-require@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-py3/sSQT3y6ZiGLsviEdfaowWabYQ8Qre9nXrR0YHCVpAr39j5pA7GjBSPkiKR+gtDDzaNbX9yyMIJp6hchm1A==}
+  '@modern-js/node-bundle-require@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-MVAXRMaGNzMRel/b+qxp6fa9FtZpa+RO8em49UVG02nYgCBXNn65n1roPU9rVt0cRlWikIK3U66hkzyRFHJROQ==}
 
   '@modern-js/node-bundle-require@2.65.1':
     resolution: {integrity: sha512-XpEkciVEfDbkkLUI662ZFlI9tXsUQtLXk4NRJDBGosNnk9uL2XszmC8sKsdCSLK8AYuPW2w6MTVWuJsOR0EU8A==}
 
-  '@modern-js/plugin-data-loader@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-mrC4FTl/I/wPFcot7k04YL2XAwr1jA1oHT4ydjr3WN7ftgBEbCKKFwmRjZ/BKvvvntgaffe7gAmUhLQ5hYp9tg==}
+  '@modern-js/plugin-data-loader@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-ColGuK3A4SzsgGHY3KTMs6PBvAwb/Px2DRkVFXyjXKOm5VhL/XO8QqnbidDU8GXHrk4Aa3hsYYmghXi0j6g3bg==}
     engines: {node: '>=16.2.0'}
     peerDependencies:
       react: '>=17.0.0'
 
-  '@modern-js/plugin-i18n@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-XXnIWEXo4E05nrIk+e6l/XtR8eV7UGhXH/odCB/px6i4a3/spemACcVNjCDRUWuoo9U11W1LVqScMEnuI4vEmA==}
+  '@modern-js/plugin-i18n@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-hXkWdDxkqZoZHLGT4tvJuDLYXQys8jRReAufFtMPrPgn8H6oIWFfrNFTqU5UVVrXmUQ3VkmBj1tA0ym7slcT1w==}
 
-  '@modern-js/plugin-v2@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-HMiHcYFyMx3yR3vHtrjZNv3r2hDjfnAivlUk1xRKIrqJeO35xuDGoId5CRnEauC+WcAIntylh5muLz5zPH2iBw==}
+  '@modern-js/plugin-v2@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-rTH3j6CH8uLkkRqhh6WtpibPhVVt7+QmdYNtDXcvMsIqf7rFIXBdwr8IIngtBSXIBzDzmXKqKSbsCPZmYGe7Ig==}
 
-  '@modern-js/plugin@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-1ZcgBofmGBMAbKJhuzukA7R4YqLSENBoYMBCJTUf5OH3lIN4QfFGsR4vQUMen/0EgGc4o8lcEbRqxBRcizRcug==}
+  '@modern-js/plugin@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-cnr+ZOsgiYfjGgC0FCXrWhUvW5kTwIMefuVN/2zSFu+9f8q6zBhafaMHom4rohW3tvsaX81zf84eA2gN3h3vGw==}
 
-  '@modern-js/prod-server@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-VHpV0oaTtjBnyMsAq1Q9qo8HiSso84T0kiRO2ywLr3+Gd6YfDXLIaoyd/dVy3Bd1Z8QIhAEFvZ661KpSANcCQw==}
+  '@modern-js/prod-server@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-ivxDmbARdoSlKG4ZFWIGY0EEYqEau6kpgtp/u7i3WSrnJabV39OlnRkxedXlmyyDvDxZnYigNgZY/kPaFPOxYQ==}
     engines: {node: '>=16.2.0'}
 
-  '@modern-js/render@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-gI+X0MS4GzcAbhM0F/m6YapXwJ6b6lRxyFi83OI3bpzE4Q7QlsFhz1KPA25ThhRJhrhIUFxW8gVE+35oFCxxzQ==}
+  '@modern-js/render@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-BBjT6sbXcOdZWwe+V+CG2Qg1+SW9RUDq0ArnU2ddBvCf57Us3KiaSaeL8J34ydWkRRXcwniWUb82bYR656W26Q==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
-  '@modern-js/rsbuild-plugin-esbuild@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-4+YQdd+8A5AujkwNFV3UufD2euIvPvbz16FMfsf8X4fdODaQCiJ8vI6td0fD7hLAo6stlgvoAY+ZIeKT9G5g4g==}
+  '@modern-js/rsbuild-plugin-esbuild@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-eSpZ8Thi5Qijvk1014cJ8SfPG+fnccBhyKY5B5ywfC66Wb1bl9Q2yft74aKMF4p+YfTVYqz/prQDzbxtS/8WSA==}
 
-  '@modern-js/runtime-utils@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-xiiJRin9CW1yWmqID8xfAS78cUuZKoLDQBcNNYmhtae5ehIQhOY5FSyllei5Jp4g2GT2XdR/qVcfpeZzUfBEGQ==}
+  '@modern-js/runtime-utils@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-Zm6MNRK3o2mucnTca9BfYXQzTGKI8eCkSAJjjYRtNX9eBu32zConvMLV1rR+IKKxi+lptruA+j+o8Qh7t/i34g==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
@@ -1051,25 +1051,25 @@ packages:
       react-dom:
         optional: true
 
-  '@modern-js/runtime@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-pkA3KM+JHSbFbYjI8fA4h3pcIb7hUJxXRQ7CW/CiQShHAki1GeeMs1JCDwaESevRB3MM+MccaZKWoPPC4HYOvQ==}
+  '@modern-js/runtime@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-yY7C4bA7o8uD9Zs9oeYnpZYv8g0goIcVRxb3dh6xDBPJBrKHXBocwOUsHM/jeXV15xxYWUlnZiFuGGQOdcOJyw==}
     engines: {node: '>=14.17.6'}
     peerDependencies:
       react: '>=17'
       react-dom: '>=17'
 
-  '@modern-js/server-core@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-KFY8Mdy/2rCT8WVbnABMlYHF4CuXgtTLo6dYD3dPBjsPXrwh65wrIpHEAILeOshyXEK4MNMtMwf0HQpRfwwfYA==}
+  '@modern-js/server-core@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-asWSlbxK02cirUvX9Dcc9piW6qIpt+W8D1KdI2vijU1KMKZ3OAwJ7BYPrRHHHI1+Gop2Mkypgkdvz3uilZARug==}
     engines: {node: '>=16.2.0'}
 
-  '@modern-js/server-runtime@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-ak1DZbCfhhWulcO5N9OojJQxHKblNv0JxnvFp9qIf6s/Z3QE1tgWD4BG+leM8Ej0Ici157+7TWUKRZZJr5ReSQ==}
+  '@modern-js/server-runtime@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-wpmqNM5EeWEGg9qS0cHGAhTWMrnm7mqbQkIaHFhwoZ12tZN8hfeoQf+jo0CgHgu5UYZkph0yHC1H1Lgi29zXXw==}
 
-  '@modern-js/server-utils@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-1JdojOTlV7pXZrjhekFmrakDF5IPWeqZXcg7W442zGOUKL9uqsm0JD+dFxgve3DXsdbO+iXft+VEwuMuMZD/vQ==}
+  '@modern-js/server-utils@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-CkdHJxbxdBERL4a2JJ2/xPYWlYD486qNYtclBBrrwGDEfK5FpY1p9gwiR/ihdd8Fm6jjB2TdS5JroTxkxXjXAw==}
 
-  '@modern-js/server@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-9ukCdDDg8eWfwx3MXtZhpQPw7scVXUcfdIeNb8q9t1iyOo6s2Ed1uAPyQqka4vgp/36VfACA66nw25GTatYxoA==}
+  '@modern-js/server@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-/lQj8fuHpZxa+/tNRZEOrAIWYeqijyoKdEubGpZCS/GPMhoLZRrHpfJHyLD6KQ97uSsUjvwBSZnF0M3npWbp/w==}
     peerDependencies:
       devcert: ^1.2.2
       ts-node: ^10.1.0
@@ -1082,17 +1082,17 @@ packages:
       tsconfig-paths:
         optional: true
 
-  '@modern-js/tsconfig@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-AS+AuzdfqS9klGt637Sgqf/1f9j5Tzb7Q5epPBUCK5dDjfp+nV7TlJafT/nI0MN9ox6AJUJU5w4ey8kY9Ww9BA==}
+  '@modern-js/tsconfig@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-hRIi9ZWvLhO/2LSJuImEm5OUSPeYXhaurF4LRkiJ01Z+jLseAeCRtpUfOnkL4H2AsJjaXLqSzgnQPj2vjvGu8A==}
 
-  '@modern-js/types@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-S48rTg34UxH69fn/XLZN2+vxL/Qfit+ZDsSihcoUeYYXXZIt3FPrhueRtz9vsicp4SpSY+oJ9NZx6qL/ieFdcg==}
+  '@modern-js/types@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-WICO97a/PCpTaZ3j2GFmhR7897SZznCl5BZHF8lT/aeyfJ3Sxru8YYL6YEB4cgiSu2cw77IQLM8K2d2Kd79DYA==}
 
-  '@modern-js/uni-builder@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-iqu+kqLmTAx6DfwVqtUsm04OPSMuAfYzAOdsQat1gQkUREB1AF5SYZS46mtyKtj8e+MdsQUp7TVC2JpI5OADXA==}
+  '@modern-js/uni-builder@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-cltwqYekQGRJj613C7xnga0C/HBZ/SqynonskgOOZ+h7qSEuq6rLi4fKhwHonVWSQxwL1mmR1pui5qQ5CtC9fQ==}
 
-  '@modern-js/utils@0.0.0-next-20250515074625':
-    resolution: {integrity: sha512-BtbclGGb2wu0qDaxHDsyScgSbjVYq7jjr1gFUNVm1QmKITMewFClOgKYcOBxWTelMi3bbj8JWQjVYDZqV86DfA==}
+  '@modern-js/utils@0.0.0-next-20250515112623':
+    resolution: {integrity: sha512-xufCFe7yyYWu7NxKv42CjYZYoONVO6GrZUsWrWQm/SaQv3pSCWoBraIt6sBQsZo7KZyh86gxJ93UpwJnCTU4zA==}
 
   '@modern-js/utils@2.65.1':
     resolution: {integrity: sha512-HrChf19F+6nALo5XPra8ycjhXGQfGi23+S7Y2FLfTKe8vaNnky8duT/XvRWpbS4pp3SQj8ryO8m/qWSsJ1Rogw==}
@@ -5806,25 +5806,25 @@ snapshots:
       - encoding
       - supports-color
 
-  '@modern-js/app-tools@0.0.0-next-20250515074625(@rspack/core@1.3.10(@swc/helpers@0.5.17))(@swc/core@1.10.18(@swc/helpers@0.5.17))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.26.10)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(ts-node@10.9.2(@swc/core@1.10.18(@swc/helpers@0.5.17))(@types/node@18.11.19)(typescript@5.7.3))(tsconfig-paths@4.2.0)(typescript@5.7.3)':
+  '@modern-js/app-tools@0.0.0-next-20250515112623(@rspack/core@1.3.10(@swc/helpers@0.5.17))(@swc/core@1.10.18(@swc/helpers@0.5.17))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.26.10)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(ts-node@10.9.2(@swc/core@1.10.18(@swc/helpers@0.5.17))(@types/node@18.11.19)(typescript@5.7.3))(tsconfig-paths@4.2.0)(typescript@5.7.3)':
     dependencies:
       '@babel/parser': 7.27.0
       '@babel/traverse': 7.27.0(supports-color@5.5.0)
       '@babel/types': 7.27.0
-      '@modern-js/core': 0.0.0-next-20250515074625
-      '@modern-js/node-bundle-require': 0.0.0-next-20250515074625
-      '@modern-js/plugin': 0.0.0-next-20250515074625
-      '@modern-js/plugin-data-loader': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/plugin-i18n': 0.0.0-next-20250515074625
-      '@modern-js/plugin-v2': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/prod-server': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/rsbuild-plugin-esbuild': 0.0.0-next-20250515074625(@swc/core@1.10.18(@swc/helpers@0.5.17))
-      '@modern-js/server': 0.0.0-next-20250515074625(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(ts-node@10.9.2(@swc/core@1.10.18(@swc/helpers@0.5.17))(@types/node@18.11.19)(typescript@5.7.3))(tsconfig-paths@4.2.0)
-      '@modern-js/server-core': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/server-utils': 0.0.0-next-20250515074625(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)
-      '@modern-js/types': 0.0.0-next-20250515074625
-      '@modern-js/uni-builder': 0.0.0-next-20250515074625(@rspack/core@1.3.10(@swc/helpers@0.5.17))(esbuild@0.17.19)(styled-components@5.3.11(@babel/core@7.26.10)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(typescript@5.7.3)
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/core': 0.0.0-next-20250515112623
+      '@modern-js/node-bundle-require': 0.0.0-next-20250515112623
+      '@modern-js/plugin': 0.0.0-next-20250515112623
+      '@modern-js/plugin-data-loader': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/plugin-i18n': 0.0.0-next-20250515112623
+      '@modern-js/plugin-v2': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/prod-server': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/rsbuild-plugin-esbuild': 0.0.0-next-20250515112623(@swc/core@1.10.18(@swc/helpers@0.5.17))
+      '@modern-js/server': 0.0.0-next-20250515112623(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(ts-node@10.9.2(@swc/core@1.10.18(@swc/helpers@0.5.17))(@types/node@18.11.19)(typescript@5.7.3))(tsconfig-paths@4.2.0)
+      '@modern-js/server-core': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/server-utils': 0.0.0-next-20250515112623(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)
+      '@modern-js/types': 0.0.0-next-20250515112623
+      '@modern-js/uni-builder': 0.0.0-next-20250515112623(@rspack/core@1.3.10(@swc/helpers@0.5.17))(esbuild@0.17.19)(styled-components@5.3.11(@babel/core@7.26.10)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(typescript@5.7.3)
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@rsbuild/core': 1.3.20
       '@rsbuild/plugin-node-polyfill': 1.3.0(@rsbuild/core@1.3.20)
       '@swc/helpers': 0.5.17
@@ -5866,15 +5866,15 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  '@modern-js/babel-compiler@0.0.0-next-20250515074625':
+  '@modern-js/babel-compiler@0.0.0-next-20250515112623':
     dependencies:
       '@babel/core': 7.26.10
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
     transitivePeerDependencies:
       - supports-color
 
-  '@modern-js/babel-plugin-module-resolver@0.0.0-next-20250515074625':
+  '@modern-js/babel-plugin-module-resolver@0.0.0-next-20250515112623':
     dependencies:
       '@swc/helpers': 0.5.17
       glob: 8.1.0
@@ -5882,7 +5882,7 @@ snapshots:
       reselect: 4.1.8
       resolve: 1.22.10
 
-  '@modern-js/babel-preset@0.0.0-next-20250515074625(@rsbuild/core@1.3.20)':
+  '@modern-js/babel-preset@0.0.0-next-20250515112623(@rsbuild/core@1.3.20)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-proposal-decorators': 7.25.9(@babel/core@7.26.10)
@@ -5903,18 +5903,18 @@ snapshots:
       - '@rsbuild/core'
       - supports-color
 
-  '@modern-js/core@0.0.0-next-20250515074625':
+  '@modern-js/core@0.0.0-next-20250515112623':
     dependencies:
-      '@modern-js/node-bundle-require': 0.0.0-next-20250515074625
-      '@modern-js/plugin': 0.0.0-next-20250515074625
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/node-bundle-require': 0.0.0-next-20250515112623
+      '@modern-js/plugin': 0.0.0-next-20250515112623
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
 
-  '@modern-js/flight-server-transform-plugin@0.0.0-next-20250515074625': {}
+  '@modern-js/flight-server-transform-plugin@0.0.0-next-20250515112623': {}
 
-  '@modern-js/node-bundle-require@0.0.0-next-20250515074625':
+  '@modern-js/node-bundle-require@0.0.0-next-20250515112623':
     dependencies:
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
       esbuild: 0.17.19
 
@@ -5924,11 +5924,11 @@ snapshots:
       '@swc/helpers': 0.5.13
       esbuild: 0.17.19
 
-  '@modern-js/plugin-data-loader@0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@modern-js/plugin-data-loader@0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/core': 7.26.10
-      '@modern-js/runtime-utils': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/runtime-utils': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
       path-to-regexp: 6.3.0
       react: 18.3.1
@@ -5936,47 +5936,47 @@ snapshots:
       - react-dom
       - supports-color
 
-  '@modern-js/plugin-i18n@0.0.0-next-20250515074625':
+  '@modern-js/plugin-i18n@0.0.0-next-20250515112623':
     dependencies:
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
 
-  '@modern-js/plugin-v2@0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@modern-js/plugin-v2@0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@modern-js/runtime-utils': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/runtime-utils': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
       jiti: 1.21.7
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@modern-js/plugin@0.0.0-next-20250515074625':
+  '@modern-js/plugin@0.0.0-next-20250515112623':
     dependencies:
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
 
-  '@modern-js/prod-server@0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@modern-js/prod-server@0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@modern-js/runtime-utils': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/server-core': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/runtime-utils': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/server-core': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
       source-map-support: 0.5.21
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@modern-js/render@0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@modern-js/render@0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@modern-js/types': 0.0.0-next-20250515074625
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/types': 0.0.0-next-20250515112623
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       rsc-html-stream: 0.0.5
 
-  '@modern-js/rsbuild-plugin-esbuild@0.0.0-next-20250515074625(@swc/core@1.10.18(@swc/helpers@0.5.17))':
+  '@modern-js/rsbuild-plugin-esbuild@0.0.0-next-20250515112623(@swc/core@1.10.18(@swc/helpers@0.5.17))':
     dependencies:
       '@swc/helpers': 0.5.17
       esbuild: 0.17.19
@@ -5986,10 +5986,10 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@modern-js/runtime-utils@0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@modern-js/runtime-utils@0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@modern-js/types': 0.0.0-next-20250515074625
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/types': 0.0.0-next-20250515112623
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@remix-run/router': 1.20.0
       '@swc/helpers': 0.5.17
       lru-cache: 10.4.3
@@ -5999,20 +5999,20 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@modern-js/runtime@0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@modern-js/runtime@0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/types': 7.27.0
       '@loadable/babel-plugin': 5.15.3(@babel/core@7.26.10)
       '@loadable/component': 5.15.3(react@18.3.1)
       '@loadable/server': 5.15.3(@loadable/component@5.15.3(react@18.3.1))(react@18.3.1)
-      '@modern-js/plugin': 0.0.0-next-20250515074625
-      '@modern-js/plugin-data-loader': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/plugin-v2': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/render': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/runtime-utils': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/types': 0.0.0-next-20250515074625
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/plugin': 0.0.0-next-20250515112623
+      '@modern-js/plugin-data-loader': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/plugin-v2': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/render': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/runtime-utils': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/types': 0.0.0-next-20250515112623
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
       '@types/loadable__component': 5.13.9
       '@types/react-helmet': 6.1.11
@@ -6031,12 +6031,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@modern-js/server-core@0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@modern-js/server-core@0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@modern-js/plugin': 0.0.0-next-20250515074625
-      '@modern-js/plugin-v2': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/runtime-utils': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/plugin': 0.0.0-next-20250515112623
+      '@modern-js/plugin-v2': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/runtime-utils': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
       '@web-std/fetch': 4.2.1
       '@web-std/file': 3.0.3
@@ -6049,26 +6049,26 @@ snapshots:
       - react
       - react-dom
 
-  '@modern-js/server-runtime@0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@modern-js/server-runtime@0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@modern-js/runtime-utils': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/server-core': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/runtime-utils': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/server-core': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@swc/helpers': 0.5.17
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@modern-js/server-utils@0.0.0-next-20250515074625(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)':
+  '@modern-js/server-utils@0.0.0-next-20250515112623(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-proposal-decorators': 7.25.9(@babel/core@7.26.10)
       '@babel/preset-env': 7.26.9(@babel/core@7.26.10)
       '@babel/preset-react': 7.26.3(@babel/core@7.26.10)
       '@babel/preset-typescript': 7.27.0(@babel/core@7.26.10)
-      '@modern-js/babel-compiler': 0.0.0-next-20250515074625
-      '@modern-js/babel-plugin-module-resolver': 0.0.0-next-20250515074625
-      '@modern-js/babel-preset': 0.0.0-next-20250515074625(@rsbuild/core@1.3.20)
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/babel-compiler': 0.0.0-next-20250515112623
+      '@modern-js/babel-plugin-module-resolver': 0.0.0-next-20250515112623
+      '@modern-js/babel-preset': 0.0.0-next-20250515112623(@rsbuild/core@1.3.20)
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
       babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.26.10)(@babel/traverse@7.27.0)
     transitivePeerDependencies:
@@ -6076,15 +6076,15 @@ snapshots:
       - '@rsbuild/core'
       - supports-color
 
-  '@modern-js/server@0.0.0-next-20250515074625(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(ts-node@10.9.2(@swc/core@1.10.18(@swc/helpers@0.5.17))(@types/node@18.11.19)(typescript@5.7.3))(tsconfig-paths@4.2.0)':
+  '@modern-js/server@0.0.0-next-20250515112623(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(ts-node@10.9.2(@swc/core@1.10.18(@swc/helpers@0.5.17))(@types/node@18.11.19)(typescript@5.7.3))(tsconfig-paths@4.2.0)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/register': 7.25.9(@babel/core@7.26.10)
-      '@modern-js/runtime-utils': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/server-core': 0.0.0-next-20250515074625(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/server-utils': 0.0.0-next-20250515074625(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)
-      '@modern-js/types': 0.0.0-next-20250515074625
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/runtime-utils': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/server-core': 0.0.0-next-20250515112623(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/server-utils': 0.0.0-next-20250515112623(@babel/traverse@7.27.0)(@rsbuild/core@1.3.20)
+      '@modern-js/types': 0.0.0-next-20250515112623
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@swc/helpers': 0.5.17
       axios: 1.9.0
       connect-history-api-fallback: 2.0.0
@@ -6105,18 +6105,18 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@modern-js/tsconfig@0.0.0-next-20250515074625': {}
+  '@modern-js/tsconfig@0.0.0-next-20250515112623': {}
 
-  '@modern-js/types@0.0.0-next-20250515074625': {}
+  '@modern-js/types@0.0.0-next-20250515112623': {}
 
-  '@modern-js/uni-builder@0.0.0-next-20250515074625(@rspack/core@1.3.10(@swc/helpers@0.5.17))(esbuild@0.17.19)(styled-components@5.3.11(@babel/core@7.26.10)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(typescript@5.7.3)':
+  '@modern-js/uni-builder@0.0.0-next-20250515112623(@rspack/core@1.3.10(@swc/helpers@0.5.17))(esbuild@0.17.19)(styled-components@5.3.11(@babel/core@7.26.10)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(typescript@5.7.3)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/preset-react': 7.26.3(@babel/core@7.26.10)
       '@babel/types': 7.27.0
-      '@modern-js/babel-preset': 0.0.0-next-20250515074625(@rsbuild/core@1.3.20)
-      '@modern-js/flight-server-transform-plugin': 0.0.0-next-20250515074625
-      '@modern-js/utils': 0.0.0-next-20250515074625
+      '@modern-js/babel-preset': 0.0.0-next-20250515112623(@rsbuild/core@1.3.20)
+      '@modern-js/flight-server-transform-plugin': 0.0.0-next-20250515112623
+      '@modern-js/utils': 0.0.0-next-20250515112623
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.16(react-refresh@0.14.2)(webpack@5.99.8(@swc/core@1.10.18(@swc/helpers@0.5.17))(esbuild@0.17.19))
       '@rsbuild/core': 1.3.20
       '@rsbuild/plugin-assets-retry': 1.2.1(@rsbuild/core@1.3.20)
@@ -6188,7 +6188,7 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  '@modern-js/utils@0.0.0-next-20250515074625':
+  '@modern-js/utils@0.0.0-next-20250515112623':
     dependencies:
       '@swc/helpers': 0.5.17
       caniuse-lite: 1.0.30001718

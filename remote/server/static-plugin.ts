@@ -3,6 +3,7 @@ import { fs } from '@modern-js/utils';
 import path from 'node:path';
 import { fileCache } from './file-cache';
 
+const bundlesAssetPrefix = '/bundles';
 const createStaticMiddleware = (options: {
   assetPrefix: string;
   pwd: string;
@@ -18,7 +19,6 @@ const createStaticMiddleware = (options: {
     }
 
     // Skip if the request is not for asset prefix
-    const bundlesAssetPrefix = path.join(assetPrefix, 'bundles');
     if (!pathname.startsWith(bundlesAssetPrefix)) {
       return next();
     }
