@@ -25,21 +25,25 @@
     "pre-commit": "npx lint-staged"
   },
   "dependencies": {
-    "@modern-js/runtime": "2.67.0",
-    "@module-federation/modern-js": "^0.11.3",
+    "@modern-js/utils": "0.0.0-next-20250515112623",
+    "@modern-js/runtime": "0.0.0-next-20250515112623",
+    "@modern-js/server-runtime": "0.0.0-next-20250515112623",
+    "@module-federation/modern-js": "0.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@modern-js/app-tools": "2.67.0",
-    "@modern-js/tsconfig": "2.67.0",
+    "@modern-js/app-tools": "0.0.0-next-20250515112623",
+    "@modern-js/tsconfig": "0.0.0-next-20250515112623",
+    "@modern-js/server-core": "0.0.0-next-20250515112623",
     "@types/jest": "~29.2.4",
     "@types/node": "~18.11.9",
     "@types/react": "^18.3.11",
     "@types/react-dom": "~18.3.1",
     "lint-staged": "~15.4.0",
     "simple-git-hooks": "^2.11.1",
+    "ts-node": "~10.9.2",
     "typescript": "~5.7.3"
   }
 }
