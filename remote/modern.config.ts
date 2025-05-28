@@ -11,11 +11,12 @@ export default defineConfig({
   server: {
     ssr: {
       mode: "stream",
+      disablePrerender: true,
     },
     port: 3052,
   },
   output: {
-    assetPrefix: isLocal ? "http://localhost:3052" : "/",
+    assetPrefix: "http://localhost:3052",
   },
   plugins: [
     appTools({

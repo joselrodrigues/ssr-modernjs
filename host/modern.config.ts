@@ -9,6 +9,7 @@ export default defineConfig({
   server: {
     ssr: {
       mode: "stream",
+      disablePrerender: true,
     },
     port: 3000,
   },
