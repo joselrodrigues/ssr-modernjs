@@ -15,7 +15,7 @@ export default defineConfig({
     port: 3052,
   },
   output: {
-    assetPrefix: "http://localhost:3052"
+    assetPrefix: isLocal ? "http://localhost:3052" : "/",
   },
   plugins: [
     appTools({
