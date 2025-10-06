@@ -1,8 +1,18 @@
 const fakeApi = (): Promise<any> =>
   new Promise((resolve) => {
     setTimeout(
-      () => resolve({ banners: ["banner1", "banner2", "banner3"] }),
-      3000
+      () =>
+        resolve({
+          banners: [
+            "🚀 Module Federation Ready",
+            "⚡ SSR Streaming Active",
+            "🎯 Modern.js Framework",
+            "🔥 Hot Module Reload",
+            "💎 Production Ready",
+            "🌟 Dynamic Imports",
+          ],
+        }),
+      2000,
     );
   });
 
