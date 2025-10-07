@@ -16,6 +16,9 @@ const Index = () => (
     <button onClick={() => (window.location.href = "/spa")}>
       Redirect to Spa page
     </button>
+    <button onClick={() => (window.location.href = "/remote-page")}>
+      Redirect to remote page
+    </button>
     <div
       style={{
         maxWidth: "1200px",

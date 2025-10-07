@@ -8,6 +8,7 @@ export default createModuleFederationConfig({
   filename: "static/remoteEntry.js",
   exposes: {
     "./Home": "./src/routes/page.tsx",
+    "./RemotePage": "./src/components/RemotePage/index.tsx",
   },
   shared: {
     react: { singleton: true, requiredVersion: "^18.3.1" },
