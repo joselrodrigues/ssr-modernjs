@@ -13,6 +13,9 @@ const Index = () => (
         '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
     }}
   >
+    <button onClick={() => (window.location.href = "/spa")}>
+      Redirect to Spa page
+    </button>
     <div
       style={{
         maxWidth: "1200px",
