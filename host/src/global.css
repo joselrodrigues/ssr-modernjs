@@ -6,4 +6,10 @@
 
 body {
   margin: 0;
+  background-color: white;
+  min-height: 100vh;
+}
+
+html {
+  background-color: white;
 }

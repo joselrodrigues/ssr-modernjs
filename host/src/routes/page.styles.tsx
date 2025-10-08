@@ -3,7 +3,7 @@ import { Box, Heading, Text, Container, Button } from 'theme-ui';
 
 export const PageContainer = styled(Box)`
   min-height: 100vh;
-  background: #f8f9fa;
+  background: white;
   padding: 0;
 `;
 

@@ -88,16 +88,7 @@ const RemotePage = () => {
           </Subtitle>
         </Header>
 
-        <ContentBox
-          sx={{
-            bg: "white",
-            borderRadius: 0,
-            padding: 4,
-            boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-          }}
-        >
-          <RemotePageComponent />
-        </ContentBox>
+        <RemotePageComponent />
 
         <ButtonWrapper
           sx={{
