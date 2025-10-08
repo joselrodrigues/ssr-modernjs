@@ -1,121 +1,125 @@
+/** @jsxImportSource theme-ui */
 import React from "react";
 import { kit, loadRemote } from "@module-federation/modern-js/runtime";
+import {
+  PageContainer,
+  MainContainer,
+  Header,
+  Title,
+  Subtitle,
+  ContentBox,
+  ButtonWrapper,
+  BackButton,
+  LoadingBox,
+  LoadingText,
+  ErrorBox,
+  ErrorText,
+} from "./page.styles";
 
 const RemotePageComponent = kit.createRemoteSSRComponent({
   loader: () => loadRemote("remote/RemotePage"),
   loading: (
-    <div
-      style={{
-        padding: "3rem",
+    <LoadingBox
+      sx={{
+        padding: 5,
         textAlign: "center",
-        color: "#718096",
+        color: "gray",
       }}
     >
-      <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>⏳</div>
-      <p>Loading remote page component...</p>
-    </div>
+      <LoadingText sx={{ fontSize: 5, marginBottom: 3 }}>⏳</LoadingText>
+      <LoadingText>Loading remote page component...</LoadingText>
+    </LoadingBox>
   ),
   fallback: ({ error }: { error: Error }) => {
     return (
-      <div
-        style={{
-          padding: "3rem",
-          background: "#fed7d7",
-          borderRadius: "12px",
+      <ErrorBox
+        sx={{
+          padding: 5,
+          bg: "white",
+          borderRadius: 0,
+          borderLeft: "4px solid #c53030",
           color: "#c53030",
           textAlign: "center",
         }}
       >
-        <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>⚠️</div>
-        <p>Error loading remote component</p>
-        <p style={{ fontSize: "0.9rem", marginTop: "0.5rem" }}>
-          {error.message}
-        </p>
-      </div>
+        <ErrorText sx={{ fontSize: 5, marginBottom: 3 }}>⚠️</ErrorText>
+        <ErrorText>Error loading remote component</ErrorText>
+        <ErrorText sx={{ fontSize: 1, marginTop: 2 }}>{error.message}</ErrorText>
+      </ErrorBox>
     );
   },
 });
 
 const RemotePage = () => {
   return (
-    <div
-      style={{
+    <PageContainer
+      sx={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-        padding: "2rem",
-        fontFamily:
-          '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        padding: 4,
       }}
     >
-      <div
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
-      >
-        <header
-          style={{
+      <MainContainer sx={{ maxWidth: "1200px" }}>
+        <Header
+          as="header"
+          sx={{
             textAlign: "center",
-            marginBottom: "3rem",
-            color: "white",
+            marginBottom: 5,
+            color: "#1e3a8a",
           }}
         >
-          <h1
-            style={{
-              fontSize: "3rem",
-              fontWeight: "700",
-              marginBottom: "0.5rem",
+          <Title
+            as="h1"
+            sx={{
+              fontSize: [5, 6, 7],
+              fontWeight: "bold",
+              marginBottom: 2,
               textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
             }}
           >
             🏠 Host - Remote Page
-          </h1>
-          <p
-            style={{
-              fontSize: "1.25rem",
+          </Title>
+          <Subtitle
+            sx={{
+              fontSize: [2, 3],
               opacity: 0.9,
             }}
           >
             This page uses a federated component from the remote module
-          </p>
-        </header>
+          </Subtitle>
+        </Header>
 
-        <div
-          style={{
-            background: "white",
-            borderRadius: "16px",
-            padding: "2rem",
-            boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
+        <ContentBox
+          sx={{
+            bg: "white",
+            borderRadius: 0,
+            padding: 4,
+            boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
           }}
         >
           <RemotePageComponent />
-        </div>
+        </ContentBox>
 
-        <div
-          style={{
-            marginTop: "2rem",
+        <ButtonWrapper
+          sx={{
+            marginTop: 4,
             textAlign: "center",
           }}
         >
-          <button
+          <BackButton
             onClick={() => (window.location.href = "/")}
-            style={{
-              padding: "1rem 2rem",
-              fontSize: "1rem",
+            variant="success"
+            sx={{
+              padding: 3,
+              fontSize: 2,
               fontWeight: "600",
-              color: "#667eea",
-              background: "white",
-              border: "2px solid white",
-              borderRadius: "12px",
               cursor: "pointer",
-              boxShadow: "0 4px 15px rgba(255,255,255,0.3)",
             }}
           >
             ← Back to Home
-          </button>
-        </div>
-      </div>
-    </div>
+          </BackButton>
+        </ButtonWrapper>
+      </MainContainer>
+    </PageContainer>
   );
 };
 

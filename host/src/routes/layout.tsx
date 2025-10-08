@@ -1,9 +1,12 @@
 import { Outlet } from '@modern-js/runtime/router';
+import { ThemeProvider } from 'theme-ui';
+import theme from '../theme';
+import '../global.css';
 
 export default function Layout() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Outlet />
-    </div>
+    </ThemeProvider>
   );
 }

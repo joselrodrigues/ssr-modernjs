@@ -1,50 +1,52 @@
+/** @jsxImportSource theme-ui */
+import {
+  PageContainer,
+  MainContainer,
+  ContentBox,
+  Title,
+  Description,
+} from "./page.styles";
+
 const Spa = () => {
   return (
-    <div
-      style={{
+    <PageContainer
+      sx={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        padding: "2rem",
-        fontFamily:
-          '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        padding: 4,
       }}
     >
-      <div
-        style={{
-          maxWidth: "800px",
-          margin: "0 auto",
-        }}
-      >
-        <div
-          style={{
-            background: "white",
-            borderRadius: "16px",
-            padding: "3rem",
-            boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
+      <MainContainer sx={{ maxWidth: "800px" }}>
+        <ContentBox
+          sx={{
+            bg: "white",
+            borderRadius: 0,
+            padding: 5,
+            boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
             textAlign: "center",
           }}
         >
-          <h1
-            style={{
-              fontSize: "3rem",
-              fontWeight: "700",
-              color: "#667eea",
-              marginBottom: "1rem",
+          <Title
+            as="h1"
+            sx={{
+              fontSize: [5, 6, 7],
+              fontWeight: "bold",
+              color: "primary",
+              marginBottom: 3,
             }}
           >
             🎯 SPA Route
-          </h1>
-          <p
-            style={{
-              fontSize: "1.25rem",
-              color: "#4a5568",
+          </Title>
+          <Description
+            sx={{
+              fontSize: [2, 3],
+              color: "text",
             }}
           >
-            This is a simple SPA page in your remote application
-          </p>
-        </div>
-      </div>
-    </div>
+            This is a simple SPA page in your host application
+          </Description>
+        </ContentBox>
+      </MainContainer>
+    </PageContainer>
   );
 };
 

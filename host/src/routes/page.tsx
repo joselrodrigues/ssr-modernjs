@@ -1,103 +1,53 @@
+/** @jsxImportSource theme-ui */
 import React from "react";
-
+import { Text } from "theme-ui";
 import { kit, loadRemote } from "@module-federation/modern-js/runtime";
+import {
+  PageContainer,
+  MainContainer,
+  ButtonGroup,
+  NavButton,
+  Header,
+  Title,
+  Subtitle,
+  ContentBox,
+  InfoBox,
+  InfoTitle,
+  InfoText,
+} from "./page.styles";
 
 const RemoteHome = kit.createRemoteSSRComponent({
   loader: () => loadRemote("remote/Home"),
-  loading: <div>loading...</div>,
+  loading: <Text>loading...</Text>,
   fallback: ({ error }: { error: Error }) => {
     if (error instanceof Error && error.message.includes("not exist")) {
-      return <div>fallback - not existed id</div>;
+      return <Text>fallback - not existed id</Text>;
     }
-    return <div>fallback</div>;
+    return <Text>fallback</Text>;
   },
 });
 
 const Index = () => {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        padding: "2rem",
-        fontFamily:
-          '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
-      >
-        <header
-          style={{
-            textAlign: "center",
-            marginBottom: "3rem",
-            color: "white",
-          }}
-        >
-          <h1
-            style={{
-              fontSize: "3rem",
-              fontWeight: "700",
-              marginBottom: "0.5rem",
-              textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
-            }}
-          >
-            🏠 Host Application
-          </h1>
-          <p
-            style={{
-              fontSize: "1.25rem",
-              opacity: 0.9,
-            }}
-          >
-            Module Federation Demo - Main Container
-          </p>
-        </header>
+    <PageContainer>
+      <MainContainer>
+        <Header as="header">
+          <Title as="h1">🏠 Host Application</Title>
+          <Subtitle>Module Federation Demo - Main Container</Subtitle>
+        </Header>
 
-        <div
-          style={{
-            background: "white",
-            borderRadius: "16px",
-            padding: "2rem",
-            boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
-          }}
-        >
-          <div
-            style={{
-              marginBottom: "1.5rem",
-              padding: "1rem",
-              background: "#f7fafc",
-              borderRadius: "8px",
-              borderLeft: "4px solid #667eea",
-            }}
-          >
-            <h2
-              style={{
-                fontSize: "1.5rem",
-                color: "#2d3748",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              📦 Remote Component
-            </h2>
-            <p
-              style={{
-                color: "#718096",
-                margin: 0,
-                fontSize: "0.95rem",
-              }}
-            >
+        <ContentBox>
+          <InfoBox>
+            <InfoTitle as="h2">📦 Remote Component</InfoTitle>
+            <InfoText>
               Loading federated module from remote application...
-            </p>
-          </div>
+            </InfoText>
+          </InfoBox>
 
           <RemoteHome />
-        </div>
-      </div>
-    </div>
+        </ContentBox>
+      </MainContainer>
+    </PageContainer>
   );
 };
 

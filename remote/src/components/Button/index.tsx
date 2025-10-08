@@ -1,38 +1,48 @@
+/** @jsxImportSource theme-ui */
 import { useAsyncValue } from "@modern-js/runtime/router";
+import {
+  Container,
+  Title,
+  BannersWrapper,
+  BannerTag,
+  NoDataText,
+} from "./index.styles";
 
 const Button = () => {
   const data = useAsyncValue() as { banners: string[] };
 
   return (
-    <div
-      style={{
-        padding: "2rem",
-        background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-        borderRadius: "12px",
-        color: "white",
+    <Container
+      sx={{
+        padding: 4,
+        background: "white",
+        borderRadius: 0,
+        color: "#2d3748",
       }}
     >
-      <h2 style={{ margin: "0 0 1rem 0" }}>Remote Component</h2>
+      <Title as="h2" sx={{ margin: "0 0 3 0" }}>
+        Remote Component
+      </Title>
 
       {data?.banners && data.banners.length > 0 ? (
-        <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+        <BannersWrapper sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
           {data.banners.map((banner, index) => (
-            <span
+            <BannerTag
               key={index}
-              style={{
-                padding: "0.5rem 1rem",
-                background: "rgba(255,255,255,0.2)",
-                borderRadius: "20px",
+              sx={{
+                padding: "2 3",
+                background: "#f8f9fa",
+                borderRadius: 0,
               }}
             >
               {banner}
-            </span>
+            </BannerTag>
           ))}
-        </div>
+        </BannersWrapper>
       ) : (
-        <p>No banners available</p>
+        <NoDataText>No banners available</NoDataText>
       )}
-    </div>
+    </Container>
   );
 };
 

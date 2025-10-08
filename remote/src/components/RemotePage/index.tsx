@@ -1,56 +1,78 @@
+/** @jsxImportSource theme-ui */
+import {
+  Container,
+  Header,
+  Title,
+  Description,
+  FeaturesBox,
+  FeaturesTitle,
+  FeaturesList,
+} from "./index.styles";
+
 const RemotePage = () => {
   return (
-    <div
-      style={{
-        padding: "3rem",
-        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        borderRadius: "16px",
-        color: "white",
-        boxShadow: "0 10px 40px rgba(0,0,0,0.2)",
+    <Container
+      sx={{
+        padding: 5,
+        background: "white",
+        borderRadius: 0,
+        color: "#2d3748",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
       }}
     >
-      <div
-        style={{
+      <Header
+        sx={{
           textAlign: "center",
-          marginBottom: "2rem",
+          marginBottom: 4,
         }}
       >
-        <h1
-          style={{
-            fontSize: "2.5rem",
-            fontWeight: "700",
-            marginBottom: "1rem",
+        <Title
+          as="h1"
+          sx={{
+            fontSize: [4, 5, 6],
+            fontWeight: "bold",
+            marginBottom: 3,
             textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
           }}
         >
           🎯 Remote Page Component
-        </h1>
-        <p
-          style={{
-            fontSize: "1.2rem",
+        </Title>
+        <Description
+          sx={{
+            fontSize: [2, 3],
             opacity: 0.9,
           }}
         >
           This component is loaded from the remote module via Module Federation
-        </p>
-      </div>
+        </Description>
+      </Header>
 
-      <div
-        style={{
-          background: "rgba(255,255,255,0.15)",
-          padding: "2rem",
-          borderRadius: "12px",
+      <FeaturesBox
+        sx={{
+          background: "#f8f9fa",
+          padding: 4,
+          borderRadius: 0,
         }}
       >
-        <h3 style={{ marginBottom: "1rem" }}>Features:</h3>
-        <ul style={{ lineHeight: "2", fontSize: "1.1rem" }}>
+        <FeaturesTitle as="h3" sx={{ marginBottom: 3 }}>
+          Features:
+        </FeaturesTitle>
+        <FeaturesList
+          as="ul"
+          sx={{
+            lineHeight: "2",
+            fontSize: [2, 3],
+            margin: 0,
+            paddingLeft: 4,
+          }}
+        >
           <li>✨ Exported from remote module (port 3052)</li>
           <li>🔗 Imported dynamically in host module</li>
           <li>🚀 Module Federation in action</li>
           <li>⚡ Independent deployment</li>
-        </ul>
-      </div>
-    </div>
+        </FeaturesList>
+      </FeaturesBox>
+    </Container>
   );
 };
 

@@ -13,5 +13,8 @@ export default createModuleFederationConfig({
   shared: {
     react: { singleton: true, requiredVersion: "^18.3.1" },
     "react-dom": { singleton: true, requiredVersion: "^18.3.1" },
+    "theme-ui": { singleton: true },
+    "@emotion/react": { singleton: true },
+    "@theme-ui/presets": { singleton: true },
   },
 });

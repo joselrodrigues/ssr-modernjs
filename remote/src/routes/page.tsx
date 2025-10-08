@@ -1,111 +1,95 @@
+/** @jsxImportSource theme-ui */
 import { Suspense } from "react";
-import Button from "../components/Button";
+import BannerComponent from "../components/Button";
+import BannerCarousel from "../components/Carousel/BannerCarousel";
 import { getBanners } from "@/services/getBanners";
+import { getCarouselBanners } from "@/services/getCarouselBanners";
 import { Await } from "@modern-js/runtime/router";
+import {
+  PageContainer,
+  MainContainer,
+  ButtonGroup,
+  NavButton,
+  Header,
+  Title,
+  Subtitle,
+  ContentBox,
+  LoadingBox,
+  LoadingText,
+  ErrorBox,
+  ErrorText,
+} from "./page.styles";
 
 const Index = () => (
-  <div
-    style={{
-      minHeight: "100vh",
-      background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      padding: "2rem",
-      fontFamily:
-        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-    }}
-  >
-    <button onClick={() => (window.location.href = "/spa")}>
-      Redirect to Spa page
-    </button>
-    <button onClick={() => (window.location.href = "/remote-page")}>
-      Redirect to remote page
-    </button>
-    <div
-      style={{
-        maxWidth: "1200px",
-        margin: "0 auto",
-      }}
-    >
-      <header
-        style={{
-          textAlign: "center",
-          marginBottom: "3rem",
-          color: "white",
-        }}
-      >
-        <h1
-          style={{
-            fontSize: "3rem",
-            fontWeight: "700",
-            marginBottom: "0.5rem",
-            textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
-          }}
-        >
-          🎨 Remote Application
-        </h1>
-        <p
-          style={{
-            fontSize: "1.25rem",
-            opacity: 0.9,
-          }}
-        >
-          Module Federation Demo - Remote Module Provider
-        </p>
-      </header>
-
-      <div
-        style={{
-          background: "white",
-          borderRadius: "16px",
-          padding: "2rem",
-          boxShadow: "0 20px 60px rgba(0,0,0,0.3)",
-        }}
-      >
+  <PageContainer>
+    <MainContainer>
+      <ContentBox>
         <Suspense
           fallback={
-            <div
-              style={{
-                padding: "2rem",
-                textAlign: "center",
-                color: "#718096",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: "2rem",
-                  marginBottom: "1rem",
-                }}
-              >
-                ⏳
-              </div>
-              <p>Loading remote component...</p>
-            </div>
+            <LoadingBox>
+              <LoadingText>⏳</LoadingText>
+              <LoadingText>Loading carousel...</LoadingText>
+            </LoadingBox>
+          }
+        >
+          <Await
+            resolve={getCarouselBanners()}
+            errorElement={
+              <ErrorBox>
+                <ErrorText>⚠️</ErrorText>
+                <ErrorText>Error loading carousel</ErrorText>
+              </ErrorBox>
+            }
+          >
+            <BannerCarousel />
+          </Await>
+        </Suspense>
+      </ContentBox>
+
+      <ButtonGroup>
+        <NavButton
+          onClick={() => (window.location.href = "/spa")}
+          variant="success"
+        >
+          Redirect to Spa page
+        </NavButton>
+        <NavButton
+          onClick={() => (window.location.href = "/remote-page")}
+          variant="success"
+        >
+          Redirect to remote page
+        </NavButton>
+      </ButtonGroup>
+
+      <Header as="header">
+        <Title as="h1">🎨 Remote Application</Title>
+        <Subtitle>Module Federation Demo - Remote Module Provider</Subtitle>
+      </Header>
+
+      <ContentBox>
+        <Suspense
+          fallback={
+            <LoadingBox>
+              <LoadingText>⏳</LoadingText>
+              <LoadingText>Loading remote component...</LoadingText>
+            </LoadingBox>
           }
         >
           <Await
             resolve={getBanners()}
             errorElement={
-              <div
-                style={{
-                  padding: "2rem",
-                  background: "#fed7d7",
-                  borderRadius: "8px",
-                  color: "#c53030",
-                  textAlign: "center",
-                }}
-              >
-                <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>
-                  ⚠️
-                </div>
-                <p>Error loading data</p>
-              </div>
+              <ErrorBox>
+                <ErrorText>⚠️</ErrorText>
+                <ErrorText>Error loading data</ErrorText>
+              </ErrorBox>
             }
           >
-            <Button />
+            <BannerComponent />
           </Await>
         </Suspense>
-      </div>
-    </div>
-  </div>
+      </ContentBox>
+    </MainContainer>
+  </PageContainer>
 );
 
 export default Index;
